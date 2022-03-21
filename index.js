@@ -48,8 +48,15 @@ const questions = [
     }
 ];
 
+inquirer
+    .prompt(questions)
+    .then(data)
+
 // Function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), (err) =>
+    err ? console.log(err) : console.log("Success!"))
+}
 
 // Function to initialize app
 function init() {}
