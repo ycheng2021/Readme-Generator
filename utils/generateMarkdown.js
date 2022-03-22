@@ -18,23 +18,12 @@ function renderLicenseBadge(license) {
   }
 }
 
-// Function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (license) {
-    if (license === 'Apache 2.0') {
-      return "https://www.apache.org/licenses/LICENSE-2.0"
-    } else if (license === 'GNU GPL v3') {
-      return "https://www.gnu.org/licenses/gpl-3.0.en.html"
-    } else if (license === 'MIT') {
-      return "https://www.mit.edu/~amini/LICENSE.md"
-    } else if (license === 'MPL 2.0'){
-      return "https://www.mozilla.org/en-US/MPL/2.0/"
-    } else {
-      return ""
-    }
+// function that puts the appropriate message in the license section
+function checkLicense(license){
+  if (license){
+    return `This application is covered under the ${license} license.`
   } else {
-    return "";
+    return `This application does not have a license.`
   }
 }
 
@@ -43,10 +32,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license) {
 return `
-## License 
-
 ${renderLicenseBadge(license)}
-${renderLicenseLink(license)}
     `
   } 
 }
@@ -71,11 +57,11 @@ ${data.description}
 
 - [Tests](#tests)
 
+- [License](#license)
+
 - [Questions](#questions)
 
-- [Links](#links)
-
-## Installation
+## Installation 
 ${data.installation}
 
 ## Usage 
@@ -87,11 +73,12 @@ ${data.contribution}
 ## Tests
 ${data.tests}
 
-## Questions
-My Github username is ${data.github}
+## License
+${checkLicense(data.license)}
 
-## Links
-${data.link}
+## Questions
+Github link: https://github.com/${data.github}
+If you have any additional questions, feel free to reach me at ${data.email}
 `;
 }
 

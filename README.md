@@ -1,15 +1,12 @@
 
-# Readme Generator
+# name
 
-
-## License 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-https://www.mit.edu/~amini/LICENSE.md
     
 
 ## Description
-Readme Generator will allow the user to create a readme file for their project by inputting information for the project. Readme Generator simplifies and shortens the work needed to create a readme file.
+description
 
 ## Table of Contents
 
@@ -21,24 +18,25 @@ Readme Generator will allow the user to create a readme file for their project b
 
 - [Tests](#tests)
 
+- [License](#license)
+
 - [Questions](#questions)
 
-- [Links](#links)
-
-## Installation
-There is currently no information on installation.
+## Installation 
+installation
 
 ## Usage 
-There is currently no information on usage.
+usage
 
 ## Contributing
-There is no information on contributing guidelines.
+contirbuting guidelines
 
 ## Tests
 npm i
 
-## Questions
-My Github username is ycheng2021
+## License
+This application is covered under the MIT license.
 
-## Links
-https://github.com/ycheng2021/Readme-Generator
+## Questions
+Github link: https://github.com/ycheng2021
+If you have any additional questions, feel free to reach me at name@email.com
