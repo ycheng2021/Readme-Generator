@@ -18,23 +18,14 @@ function renderLicenseBadge(license) {
   }
 }
 
+// Function that returns the license section of README
 // function that puts the appropriate message in the license section
-function checkLicense(license){
-  if (license){
+function renderLicenseSection(license){
+  if (license && license !== 'none'){
     return `This application is covered under the ${license} license.`
   } else {
     return `This application does not have a license.`
   }
-}
-
-// Function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license) {
-return `
-${renderLicenseBadge(license)}
-    `
-  } 
 }
 
 // Function to generate markdown for README
@@ -42,7 +33,7 @@ function generateMarkdown(data) {
 return `
 # ${data.title}
 
-${renderLicenseSection(data.license)}
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
@@ -74,10 +65,11 @@ ${data.contribution}
 ${data.tests}
 
 ## License
-${checkLicense(data.license)}
+${renderLicenseSection(data.license)}
 
 ## Questions
 Github link: https://github.com/${data.github}
+
 If you have any additional questions, feel free to reach me at ${data.email}
 `;
 }
