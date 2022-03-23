@@ -21,10 +21,10 @@ function renderLicenseBadge(license) {
 // Function that returns the license section of README
 // function that puts the appropriate message in the license section
 function renderLicenseSection(license){
-  if (license && license !== 'none'){
-    return `This application is covered under the ${license} license.`
-  } else {
+  if (license === 'none'){
     return `This application does not have a license.`
+  } else {
+    return `This application is covered under the ${license} license.`
   }
 }
 
