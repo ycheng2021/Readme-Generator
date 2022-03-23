@@ -24,6 +24,9 @@ Readme Generator is an application that helps users to create professional READM
 User will need to git clone or fork the repository for this project in order to access its features. This application uses built in node module fs as well as inquirer. The application will start by entering node index.js into the command line. 
 
 ## Usage 
+
+![caption](./video/License-readme.gif)
+
 This application runs with Node.js, users will need to have that installed. User will also need to use npm i in order to download all necessary files to run the features. The application uses inquirer to prompt the questions and fs.writeFile will create the README.md file.
 
 ## Contributing
