@@ -13,9 +13,7 @@ function renderLicenseBadge(license) {
     } else {
       return ""
     }
-  } else {
-    return "";
-  }
+  } 
 }
 
 // Function that returns the license section of README
