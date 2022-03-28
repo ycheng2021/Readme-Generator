@@ -25,7 +25,7 @@ User will need to git clone or fork the repository for this project in order to 
 
 ## Usage 
 
-![caption](./video/License-readme.gif)
+![caption](./video/license-readme.gif)
 
 This application runs with Node.js, users will need to have that installed. User will also need to use npm i in order to download all necessary files to run the features. The application uses inquirer to prompt the questions and fs.writeFile will create the README.md file.
 
